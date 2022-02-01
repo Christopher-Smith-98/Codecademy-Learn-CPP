@@ -20,3 +20,36 @@ int main()
     }
     std::cout << total;
 }
+
+//Part 2
+////////////////////////////////
+
+#include <iostream>
+#include <vector>
+
+int main()
+{
+    int total_even = 0;
+    int product_odd = 1;
+
+    std::vector<int> numbers(5);
+    std::cout << "Pick 5 numbers: " << "\n";
+
+    for (int i = 0; i < 5; i++)
+    {
+        std::cin >> numbers[i];
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        if (numbers[i] % 2 == 0)
+        {
+            total_even = total_even + numbers[i];
+        }
+        else
+        {
+            product_odd = product_odd * numbers[i];
+        }
+    }
+    std::cout << "Sum of even: " << total_even << "\n";
+    std::cout << "Product of odd: " << product_odd;
+}
