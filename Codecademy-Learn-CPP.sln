@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		2-Variables.cpp = 2-Variables.cpp
 		3-Conditionals-And-Logic.cpp = 3-Conditionals-And-Logic.cpp
 		4-Loops.cpp = 4-Loops.cpp
+		5-Vectors.cpp = 5-Vectors.cpp
 	EndProjectSection
 EndProject
 Global
