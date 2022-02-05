@@ -91,3 +91,19 @@ int main() {
     std::cout << average(42.0, 24.0) << "\n";
     std::cout << average(1.0, 2.0) << "\n";
 }
+//Part 6
+//////////////////////////////
+#include <iostream>
+#include <cmath>
+
+int tenth_power(int num)
+{
+    return pow(num, 10);
+}
+
+int main()
+{
+    std::cout << tenth_power(0) << "\n";
+    std::cout << tenth_power(1) << "\n";
+    std::cout << tenth_power(2) << "\n";
+}
