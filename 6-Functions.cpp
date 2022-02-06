@@ -107,3 +107,26 @@ int main()
     std::cout << tenth_power(1) << "\n";
     std::cout << tenth_power(2) << "\n";
 }
+//Part 7
+//////////////////////////////////////
+#include <iostream>
+#include <vector>
+
+std::vector <int> first_three_multiples(int num)
+{
+    std::vector <int> first_three_multiples;
+    for (int i = 1; i <= 3; i++)
+    {
+        first_three_multiples.push_back(num * i);
+    }
+    return first_three_multiples;
+}
+
+
+int main() {
+
+    for (int element : first_three_multiples(8))
+    {
+        std::cout << element << "\n";
+    }
+}
