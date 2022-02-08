@@ -158,3 +158,33 @@ int main()
 {
     std::cout << needs_water(10, false) << "\n";
 }
+//Part 9
+/////////////////////////////////////
+#include <iostream>
+#include <string>
+
+bool is_palindrome(std::string text)
+{
+    std::string backwards_text;
+
+    for (int i = text.size() - 1; i >= 0; i--)
+    {
+        backwards_text.push_back(text[i]);
+    }
+
+    if (backwards_text != text)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
+int main() 
+{
+    std::cout << is_palindrome("madam") << "\n";
+    std::cout << is_palindrome("ada") << "\n";
+    std::cout << is_palindrome("lovelace") << "\n"
+}
